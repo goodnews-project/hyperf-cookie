@@ -1,0 +1,46 @@
+{
+    "name": "gzh/hyperf-cookie",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "cookie"
+    ],
+    "description": "The Hyperf Queued Cookie package.",
+    "authors": [
+        {
+            "name": "gzh",
+            "email": "gzh19881116@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HyperfExt\\Cookie\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.3"
+    },
+    "suggest": {
+      "hyperf-ext/encryption": "For encrypt cookies"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit --prepend tests/bootstrap.php -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfExt\\Cookie\\ConfigProvider"
+        }
+    }
+}
