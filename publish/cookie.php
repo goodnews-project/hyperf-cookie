@@ -8,6 +8,7 @@ declare(strict_types=1);
  * @contact  eric@zhu.email
  * @license  https://github.com/hyperf-ext/cookie/blob/master/LICENSE
  */
+use function Hyperf\Support\env;
 return [
     'path' => env('COOKIE_PATH', '/'),
     'domain' => env('COOKIE_DOMAIN', ''),
