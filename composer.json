@@ -1,5 +1,5 @@
 {
-    "name": "gzh/hyperf-cookie",
+    "name": "goodnews/hyperf-cookie",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -10,8 +10,8 @@
     "description": "The Hyperf Queued Cookie package.",
     "authors": [
         {
-            "name": "gzh",
-            "email": "gzh19881116@163.com"
+            "name": "goodnews",
+            "email": "admin@good.news"
         }
     ],
     "autoload": {
